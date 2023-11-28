@@ -85,6 +85,7 @@ for article_element in article_elements:
     article_child = {
         "post_author": driver.find_element(By.CLASS_NAME, "author-name").text,
         "post_description": driver.find_element(By.CLASS_NAME, "gh-content").text,
+        "post_link": href,
         "post_image": []
     }
     images = driver.find_elements(By.TAG_NAME, "img")
